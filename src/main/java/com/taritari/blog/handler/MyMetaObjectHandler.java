@@ -21,7 +21,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         log.info("start insert fill------");
         this.setFieldValByName("created", LocalDateTime.now(),metaObject);
-        this.setFieldValByName("updateTime",new Date(),metaObject);
+        this.setFieldValByName("updateTime", new Date(),metaObject);
     }
 
     @Override
